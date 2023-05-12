@@ -1,0 +1,21 @@
+- - - C O M A N D O S - - -
+
+SHOW DATABASES; ==> Mostra todos banco de dados
+
+CREATE DATABASE; ==> Criar uma tabela
+
+USE "nome do banco de dados"; ==> Entrar no banco de dados
+
+ALTER SCHEMA "nome do banco" RENAME TO "new name"; ==> Comando para renomear o nome do banco de dados
+
+DROP DATABASE "nome do banco"; ==> Serve para excluir o banco de dados
+
+CREATE TABLE [IF NOT EXISTS] "nome da tabela" (
+nome_do_campo tipo_do_campo definicao_do_campo,
+nome_do_campo tipo_do_campo definicao_do_campo,
+nome_do_campo tipo_do_campo definicao_do_campo,
+); ==> Cria uma tabela com a verificação para ver se já não existe uma tabela com esse nome
+
+DESCRIBE "nome da tabela"; ==> Mostra a estrutura da tabela
+
+DROP TABLE IF EXISTS "nome da tabela" ==> Exclui a tabela se ela existir

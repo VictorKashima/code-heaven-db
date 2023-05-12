@@ -1,0 +1,3 @@
+DLC (Data Control Language) ==> Serve para definir nível de acesso do usuário no banco de dados.
+
+Chave estrangeira NUNCA pode ser auto_increment;
