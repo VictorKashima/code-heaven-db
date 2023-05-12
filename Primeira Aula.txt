@@ -4,7 +4,7 @@ USE code_heaven;
 
 SELECT DATABASE();
 
-ALTER SCHEMA code_heaven  TO fatec;
+ALTER SCHEMA code_heaven RENAME TO fatec;
 
 DROP DATABASE code_heaven;
 
