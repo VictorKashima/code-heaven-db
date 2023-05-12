@@ -1,0 +1,11 @@
+CREATE DATABASE code_heaven;
+
+USE code_heaven;
+
+SELECT DATABASE();
+
+ALTER SCHEMA code_heaven  TO fatec;
+
+DROP DATABASE code_heaven;
+
+CREATE DATABASE code_heaven;
