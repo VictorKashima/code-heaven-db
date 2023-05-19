@@ -19,3 +19,5 @@ nome_do_campo tipo_do_campo definicao_do_campo,
 DESCRIBE "nome da tabela"; ==> Mostra a estrutura da tabela
 
 DROP TABLE IF EXISTS "nome da tabela" ==> Exclui a tabela se ela existir
+
+ALTER TABLE Pedidos ADD FOREIGN KEY (usuario_id) REFERENCES Usuarios(id);
