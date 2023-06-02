@@ -55,7 +55,8 @@ CREATE TABLE perguntas (
 );
 
 CREATE TABLE respostas (
-    resp_data DATE NOT NULL,
+    resp_desc LONGTEXT NOT NULL,
+    resp_data DATETIME,
     perg_id INT,
     usu_id INT,
     resp_id INT AUTO_INCREMENT,
@@ -132,7 +133,7 @@ VALUES
     ('Como montar uma partição NTFS no Linux?', 'Tenho uma partição NTFS em um disco externo e gostaria de montá-la no Linux para acessar os arquivos. Qual é o procedimento correto?', 1, 9),
     ('Quais são as melhores práticas de segurança no Linux?', 'Estou preocupado com a segurança do meu sistema Linux. Quais são as melhores práticas para proteger o sistema contra ameaças?', 2, 10);
 
-INSERT INTO respostas (resp_data, perg_id, usu_id)
+INSERT INTO respostas (resp_desc, perg_id, usu_id)
 VALUES
     ('Para instalar uma distribuição Linux, baixe a imagem ISO, grave em um pendrive ou DVD e siga as instruções de instalação.', 1, 1),
     ('O Ubuntu é uma ótima distribuição Linux para iniciantes.', 2, 2),
@@ -144,4 +145,3 @@ VALUES
     ('O Ext4 é um sistema de arquivos mais comum e o XFS é conhecido por sua escalabilidade e desempenho.', 8, 4),
     ('Para montar uma partição NTFS no Linux, use o comando "mount" especificando o dispositivo e o ponto de montagem.', 9, 1),
     ('Algumas melhores práticas de segurança no Linux incluem manter o sistema atualizado, usar senhas fortes e configurar corretamente as permissões de arquivos e diretórios.', 10, 2);
-
