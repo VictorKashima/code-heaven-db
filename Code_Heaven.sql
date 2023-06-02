@@ -34,8 +34,8 @@ CREATE TABLE conteudos (
     conte_nome VARCHAR(100) NOT NULL,
     conte_ordem INT NOT NULL,
     conte_icone VARCHAR(255) NOT NULL,
-    conte_id INT AUTO_INCREMENT,
     categ_id INT,
+    conte_id INT AUTO_INCREMENT,
     PRIMARY KEY(conte_id)
 );
 
@@ -97,12 +97,12 @@ VALUES
     ('Pode deixar. Obrigado novamente.', '2023-05-19', 1, 2),
     ('Estou sempre aqui para ajudar.', '2023-05-19', 2, 1);
 
-INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone, categ_id) VALUES ('Linux', 1, 'icone-linux.png', 1);
-INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone, categ_id) VALUES ('Windows', 2, 'icone-windows.png', 2);
-INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone, categ_id) VALUES ('Programação', 3, 'icone-programacao.png', 3);
-INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone, categ_id) VALUES ('Hardware', 4, 'icone-hardware.png', 4);
-INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone, categ_id) VALUES ('Metodologia Ágil', 5, 'icone-metodologia-agil.png', 5);
-INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone, categ_id) VALUES ('Mobile', 6, 'icone-mobile.png', 6);
+INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone) VALUES ('Linux', 1, 'icone-linux.png');
+INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone) VALUES ('Windows', 2, 'icone-windows.png');
+INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone) VALUES ('Programação', 3, 'icone-programacao.png');
+INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone) VALUES ('Hardware', 4, 'icone-hardware.png');
+INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone) VALUES ('Metodologia Ágil', 5, 'icone-metodologia-agil.png');
+INSERT INTO conteudos (conte_nome, conte_ordem, conte_icone) VALUES ('Mobile', 6, 'icone-mobile.png');
 
 INSERT INTO categorias (categ_nome)
 VALUES
